@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Damir Sarkulin](https://up.htmlacademy.ru/htmlcss/20/user/615305).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Балабанович](https://htmlacademy.ru/profile/balabanovich).
 
 ---
 
