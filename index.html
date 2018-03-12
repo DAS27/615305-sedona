@@ -37,7 +37,7 @@
         <article class="feature">
           <h2 class="visually-hidden">Преимущества</h2>
           <aside class="photo-preview">
-            <img src="img/feature-1.jpg" alt="">
+            <img src="img/feature-1.jpg" alt="" width="67%">
           </aside>
           <section class="motive">
             <h2>Настоящий городок</h2>
@@ -67,7 +67,7 @@
         <article class="feature">
           <h2 class="visually-hidden">Преимущества</h2>
           <aside class="photo-preview">
-            <img src="img/feature-2.jpg" alt="">
+            <img src="img/feature-2.jpg" width="67%">
           </aside>
           <section class="motive">
             <h2>Там есть мост дьявола</h2>
@@ -100,27 +100,44 @@
         <section class="appointment">
           <h2>Заинтересовались</h2>
             <p class="appointment-info">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в седоне </p>
-              <a href="search.html">Поиск гостиницы в седоне</a>
-                <div class="search-form"><!-- Тут будет форма --></div>
+              <a href="inner.html">Поиск гостиницы в седоне</a>
+                <h2>Поиск гостиницы в седоне</h2>
+                  <form class="search-hotel" action="https://echo.htmlacademy.ru" method="post">
+                    <p>
+                      <label for="date-in">Дата въезда</label>
+                        <input type="date" id="date-in" name="date-in" value="" placeholder="24 АПРЕЛЯ 2017">
+                    </p>
+                    <p>
+                        <label for="date-out">Дата выезда</label>
+                          <input type="date" id="date-out" name="date-out" value="" placeholder="4 ИЮЛЯ 2017">
+                    </p>
+                    <p>
+                      <label for="adult">Взрослые</label>
+                        <input type="number" id="adult" name="adult" value="">
+                    </p>
+                     <p>
+                       <label for="children">Дети</label>
+                          <input type="number" id="children" name="children" value="">
+                     </p>
+                     <button type="submit" name="button">Найти</button>
+                  </form>
         </section>
 
         <section class="main-map">
-          <img src="img/map.jpg" alt="">
+          <img src="img/map.jpg" alt="Карта седоны" width="100%">
         </section>
 
       </main>
 
       <footer class="main-footer">
 
-        <div class="hashtag"><img src="" alt=""></div>
+        <div class="hashtag"></div>
 
-        <div class="footer-social">
-          <ul>
-            <li><a class="social-button" href="#">twitter</a></li>
-            <li><a class="social-button" href="#">facebook</a></li>
-            <li><a class="social-button" href="#">youtube</a></li>
-          </ul>
-        </div>
+        <nav class="footer-social">
+            <a class="social-button" href="https://twitter.com/" aria-label="Твиттер"></a>
+            <a class="social-button" href="https://facebook.com/" aria-label="Фейсбук"></a>
+            <a class="social-button" href="https://youtube.com/" aria-label="Ютуб"></a>
+        </nav>
 
         <section class="footer-copyright">
           <b>Разработано:</b>

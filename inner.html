@@ -9,7 +9,7 @@
 
       <header class="main-header">
         <nav class="main-navigation">
-          <a class="main-header-logo">
+          <a class="main-header-logo" href="index.html">
             <img class="logo" src="img/logo.png" alt="Логотип Седона">
           </a>
           <ul class="site-navigation">
@@ -25,7 +25,48 @@
 
         <section class="filter-form">
           <section class="form-characteristic">
-            <!-- Тут будет форма -->
+            <form class="filter-search" action="https://echo.htmlacademy.ru" method="post">
+              <fieldset class="filter-one">
+                <legend>Инфраструктура:</legend>
+                  <ul>
+                    <li>
+                      <label for="filter-swimming-pool">Бассейн</label>
+                      <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+                    </li>
+                    <li>
+                        <label for="filter-parking">Парковка</label>
+                        <input type="checkbox" name="parking">
+                    </li>
+                    <li>
+                        <label for="filter-wi-fi">Wi-Fi</label>
+                        <input type="checkbox" name="wi-fi">
+                    </li>
+                  </ul>
+              </fieldset>
+              <fieldset class="filter-two">
+                <legend>Тип жилья</legend>
+                  <ul>
+                    <li>
+                      <label for="filters-hotel">Гостиница</label>
+                      <input type="checkbox" id="filters-hotel" name="hotel" checked>
+                    </li>
+                    <li>
+                      <label for="filters-motel">Мотель</label>
+                      <input type="checkbox" id="filters-motel" name="motel" checked>
+                    </li>
+                    <li>
+                      <label for="apartments">Аппартаменты</label>
+                      <input type="checkbox" id="apartments" name="apartments" checked>
+                    </li>
+                  </ul>
+              </fieldset>
+              <fieldset filter-tree>
+                <legend>Стоймость в сутки(Р)</legend>
+                  <label for="price"></label>
+                    <input type="range" id="price" name="price">
+              </fieldset>
+              <button class="search" type="submit" name="button"></button>
+            </form>
           </section>
             <img src="img/bg-hotels.jpg" alt="">
         </section>
@@ -60,7 +101,7 @@
               </div>
               <section class="booking">
                 <a class="details" href="#">Подробнее</a>
-                <a class="book" href="#">Забронировать</a>
+                <button class="booking" href="#">Забронировать</a>
               </section>
               <div class="stars">
                 <span><img src="img/star.svg"></span>
@@ -84,7 +125,7 @@
             </div>
             <section class="booking">
               <a class="details" href="#">Подробнее</a>
-              <a class="book" href="#">Забронировать</a>
+              <button class="booking" href="#">Забронировать</a>
             </section>
             <div class="stars">
               <span><img src="img/star.svg"></span>
@@ -107,7 +148,7 @@
           </div>
           <section class="booking">
             <a class="details" href="#">Подробнее</a>
-            <a class="book" href="#">Забронировать</a>
+            <button class="booking" href="#">Забронировать</a>
           </section>
           <div class="stars">
             <span><img src="img/star.svg"></span>
@@ -124,15 +165,13 @@
 
       <footer class="main-footer">
 
-        <div class="hashtag"><img src="" alt=""></div>
+        <div class="hashtag"></div>
 
-        <div class="footer-social">
-          <ul>
-            <li><a class="social-button" href="#">twitter</a></li>
-            <li><a class="social-button" href="#">facebook</a></li>
-            <li><a class="social-button" href="#">youtube</a></li>
-          </ul>
-        </div>
+        <nav class="footer-social">
+            <a class="social-button" href="https://twitter.com/" aria-label="Твиттер"></a>
+            <a class="social-button" href="https://facebook.com/" aria-label="Фейсбук"></a>
+            <a class="social-button" href="https://youtube.com/" aria-label="Ютуб"></a>
+        </nav>
 
         <section class="footer-copyright">
           <b>Разработано:</b>
