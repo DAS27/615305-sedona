@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Главная страница Sedona</title>
   </head>
   <body>
     <div class="container">
@@ -33,7 +34,7 @@
         <article class="feature">
           <h2 class="visually-hidden">Преимущества</h2>
           <aside class="photo-preview">
-            <img src="img/feature-1.jpg" width="800px" height="256px" alt="Фото города Седона">
+            <img src="img/feature-1.jpg" width="800" height="256" alt="Фото города Седона">
           </aside>
           <section class="motive">
             <h2>Настоящий городок</h2>
@@ -43,18 +44,18 @@
         </article>
 
         <div class="promote">
-          <section class="house">
-            <img src="img/icon-1.svg">
+          <section class="promote-item">
+            <img src="img/icon-1.svg" width="75" height="72">
             <h2>Жильё</h2>
             <p>Рекомендуем пожить в настоящем <br> мотеле, всё как в кино!</p>
           </section>
-          <section class="food">
-            <img src="img/icon-2.svg">
+          <section class="promote-item">
+            <img src="img/icon-2.svg" width="75" height="72">
             <h2>Еда</h2>
             <p>Всегда заказывайте фирменный бургер <br> вы не разочаруетесь!</p>
           </section>
-          <section class="souvenir">
-            <img src="img/icon-3.svg">
+          <section class="promote-item">
+            <img src="img/icon-3.svg" width="75" height="72">
             <h2>Сувениры</h2>
             <p>Не только китайского, но и местного <br> производства!</p>
           </section>
@@ -63,7 +64,7 @@
         <article class="feature">
           <h2 class="visually-hidden">Преимущества</h2>
           <aside class="photo-preview">
-            <img src="img/feature-2.jpg" width="800px" height="256px" alt="Фото каньона">
+            <img src="img/feature-2.jpg" width="800" height="256" alt="Фото каньона">
           </aside>
           <section class="motive">
             <h2>Там есть мост дьявола</h2>
@@ -72,9 +73,9 @@
           </section>
         </article>
 
-        <section class="feature-list">
+        <section class="more-feature">
           <h2 class="visually-hidden">Преимущества</h2>
-          <ul>
+          <ul class="feature-list">
             <li class="feature-item">
               <h2>Небольшая площадь</h2>
               <p>-№3-</p>
@@ -96,8 +97,7 @@
         <section class="appointment">
           <h2>Заинтересовались</h2>
             <p class="appointment-info">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в седоне </p>
-              <a href="inner.html">Поиск гостиницы в седоне</a>
-                <h2>Поиск гостиницы в седоне</h2>
+              <button class="search" type="button" name="form">Поиск гостиницы в седоне</button>
                   <form class="search-hotel" action="https://echo.htmlacademy.ru" method="post">
                     <p>
                       <label for="date-in">Дата въезда</label>
@@ -115,17 +115,17 @@
                       <label for="children">Дети</label>
                       <input type="number" id="children" name="children" value="">
                     </p>
-                    <button type="submit" name="button">Найти</button>
+                    <button class="found" type="submit" name="button">Найти</button>
                   </form>
         </section>
 
         <section class="main-map">
-          <img src="img/map.jpg" width="1199,96 px" height="593,99 px" alt="Карта седоны">
+          <img src="img/map.jpg" width="1199,96" height="593,99" alt="Карта седоны">
         </section>
       </main>
 
       <footer class="main-footer">
-        <div class="hashtag"></div>
+        <div class="hashtag">#VISITSEDONA</div>
 
         <nav class="footer-social">
             <a class="social-button social-button-tw" href="https://twitter.com/" aria-label="Твиттер"></a>
@@ -134,9 +134,8 @@
         </nav>
 
         <section class="footer-copyright">
-          <b>Разработано:</b>
-            <img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="Логотип HTML Academy">
-            <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          <b>WEBSITY BY:</b>
+            <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
         </section>
       </div>
     </footer>

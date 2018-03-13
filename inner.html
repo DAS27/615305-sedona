@@ -2,11 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Поиск гостиниц</title>
   </head>
-  <body>
+  <body class="inner-page">
     <div class="container">
-
       <header class="main-header">
         <nav class="main-navigation">
           <a class="main-header-logo" href="index.html">
@@ -44,7 +44,7 @@
               </fieldset>
               <fieldset class="filter-type">
                 <legend>Тип жилья</legend>
-                  <ul>
+                  <ul class="filter-list">
                     <li>
                       <label for="filters-hotel">Гостиница</label>
                       <input type="checkbox" id="filters-hotel" name="hotel" checked>
@@ -62,7 +62,7 @@
               <fieldset class="filter-price">
                 <legend>Стоймость в сутки(Р)</legend>
                   <label for="price"></label>
-                    <input type="range" id="price" name="price">
+                    <div type="range" id="price" name="price"></div>
               </fieldset>
               <button class="search" type="submit" name="button"></button>
             </form>
@@ -70,13 +70,13 @@
         </section>
 
         <div class="result">
-          <section class="found">
+          <section class="found-result">
             <p>Найдено:</p>
           </section>
           <section class="sort">
             <p>Сортировка:</p>
-              <ul>
-                <li class="price sort current">По цене</li>
+              <ul class="sort-by">
+                <li class="price">По цене</li>
                 <li class="type">По типу</li>
                 <li class="rating">По рейтингу</li>
               </ul>
@@ -90,7 +90,7 @@
           <section class="result-search">
             <section class="hotel">
               <div class="hotel-img">
-                <img src="img/hotel-1.jpg" width="135px" height="90px" alt="Отель Амара">
+                <img src="img/hotel-1.jpg" width="135" height="90" alt="Отель Амара">
               </div>
               <div class="hotel-info">
                 <h3>AMARA RESORT & SPA</h3>
@@ -118,7 +118,7 @@
 
           <section class="hotel">
             <div class="hotel-img">
-              <img src="img/hotel-2.jpg" width="135px" height="90px" alt="Мотель Десерт куалин инн">
+              <img src="img/hotel-2.jpg" width="135" height="90" alt="Мотель Десерт куалин инн">
             </div>
             <div class="hotel-info">
               <h3>DESERT QUALIN INN</h3>
@@ -145,7 +145,7 @@
 
         <section class="hotel">
           <div class="hotel-img">
-            <img src="img/hotel-3.jpg" width="135px" height="90px" alt="Аппартаменты Виллас Пако Диабло">
+            <img src="img/hotel-3.jpg" width="135" height="90" alt="Аппартаменты Виллас Пако Диабло">
           </div>
           <div class="hotel-info">
             <h3>VILLAS AT PACO DIABLO</h3>
@@ -173,18 +173,18 @@
       </main>
 
       <footer class="main-footer">
-        <div class="hashtag"></div>
+        <div class="hashtag">#VISITSEDONA</div>
 
         <nav class="footer-social">
-            <a class="social-button" href="https://twitter.com/" aria-label="Твиттер"></a>
-            <a class="social-button" href="https://facebook.com/" aria-label="Фейсбук"></a>
-            <a class="social-button" href="https://youtube.com/" aria-label="Ютуб"></a>
+            <a class="social-button social-button-tw" href="https://twitter.com/" aria-label="Твиттер"></a>
+            <a class="social-button social-button-fb" href="https://facebook.com/" aria-label="Фейсбук"></a>
+            <a class="social-button social-button-yt" href="https://youtube.com/" aria-label="Ютуб"></a>
         </nav>
 
         <section class="footer-copyright">
-          <b>Разработано:</b>
-            <img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="Логотип HTML Academy">
-            <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          <b>WEBSITY BY:</b>
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+            <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"></a>
         </section>
       </div>
     </footer>
