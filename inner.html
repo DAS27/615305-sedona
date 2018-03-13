@@ -22,11 +22,10 @@
       </header>
 
       <main class="container">
-
         <section class="filter-form">
           <section class="form-characteristic">
-            <form class="filter-search" action="https://echo.htmlacademy.ru" method="post">
-              <fieldset class="filter-one">
+            <form class="filter-hotel-search" action="https://echo.htmlacademy.ru" method="post">
+              <fieldset class="filter-infrastructure">
                 <legend>Инфраструктура:</legend>
                   <ul>
                     <li>
@@ -34,16 +33,16 @@
                       <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
                     </li>
                     <li>
-                        <label for="filter-parking">Парковка</label>
-                        <input type="checkbox" name="parking">
+                      <label for="filter-parking">Парковка</label>
+                      <input type="checkbox" name="parking">
                     </li>
                     <li>
-                        <label for="filter-wi-fi">Wi-Fi</label>
-                        <input type="checkbox" name="wi-fi">
+                      <label for="filter-wi-fi">Wi-Fi</label>
+                      <input type="checkbox" name="wi-fi">
                     </li>
                   </ul>
               </fieldset>
-              <fieldset class="filter-two">
+              <fieldset class="filter-type">
                 <legend>Тип жилья</legend>
                   <ul>
                     <li>
@@ -60,7 +59,7 @@
                     </li>
                   </ul>
               </fieldset>
-              <fieldset filter-tree>
+              <fieldset class="filter-price">
                 <legend>Стоймость в сутки(Р)</legend>
                   <label for="price"></label>
                     <input type="range" id="price" name="price">
@@ -68,12 +67,11 @@
               <button class="search" type="submit" name="button"></button>
             </form>
           </section>
-            <img src="img/bg-hotels.jpg" alt="">
         </section>
 
         <div class="result">
           <section class="found">
-              <p>Найдено:</p>
+            <p>Найдено:</p>
           </section>
           <section class="sort">
             <p>Сортировка:</p>
@@ -86,11 +84,11 @@
             <section class="sort-result">
               <span class="sort up"><img src="img/icon-up-dir.svg"></span>
               <span class="sort down"><img src="img/icon-down-dir.svg"></span>
-            </section>
-          </div>
+          </section>
+        </div>
 
-          <section class="view-result-form">
-            <section class="hotel-1">
+          <section class="result-search">
+            <section class="hotel">
               <div class="hotel-img">
                 <img src="img/hotel-1.jpg" alt="">
               </div>
@@ -98,23 +96,26 @@
                 <h3>AMARA RESORT & SPA</h3>
                 <p>ГОСТИНИЦА</p>
                 <span class="price hotel">ОТ 4000 Р.</span>
+
+                <section class="booking">
+                  <a class="details" href="#">Подробнее</a>
+                  <button class="booking" href="#">Забронировать</a>
+                </section>
               </div>
-              <section class="booking">
-                <a class="details" href="#">Подробнее</a>
-                <button class="booking" href="#">Забронировать</a>
-              </section>
-              <div class="stars">
-                <span><img src="img/star.svg"></span>
-                <span><img src="img/star.svg"></span>
-                <span><img src="img/star.svg"></span>
-                <span><img src="img/star.svg"></span>
-              </div>
-              <div class="hotel-rating">
-                <p>РЕЙТИНГ: 8.5</p>
+              <div class="rank">
+                <section class="stars">
+                  <span><img src="img/star.svg"></span>
+                  <span><img src="img/star.svg"></span>
+                  <span><img src="img/star.svg"></span>
+                  <span><img src="img/star.svg"></span>
+                </section>
+                <section class="hotel-rating">
+                  <p>РЕЙТИНГ: 8.5</p>
+                </section>
               </div>
             </section>
 
-          <section class="hotel-2">
+          <section class="hotel">
             <div class="hotel-img">
               <img src="img/hotel-2.jpg" alt="">
             </div>
@@ -122,22 +123,25 @@
               <h3>DESERT QUALIN INN</h3>
               <p>МОТЕЛЬ</p>
               <span class="price hotel">ОТ 3000 Р.</span>
+
+              <section class="booking">
+                <a class="details" href="#">Подробнее</a>
+                <button class="booking" href="#">Забронировать</a>
+              </section>
             </div>
-            <section class="booking">
-              <a class="details" href="#">Подробнее</a>
-              <button class="booking" href="#">Забронировать</a>
-            </section>
-            <div class="stars">
-              <span><img src="img/star.svg"></span>
-              <span><img src="img/star.svg"></span>
-              <span><img src="img/star.svg"></span>
-            </div>
-            <div class="hotel-rating">
-              <p>РЕЙТИНГ: 8.9</p>
+            <div class="rank">
+              <section class="stars">
+                <span><img src="img/star.svg"></span>
+                <span><img src="img/star.svg"></span>
+                <span><img src="img/star.svg"></span>
+              </section>
+              <section class="hotel-rating">
+                <p>РЕЙТИНГ: 8.9</p>
+              </section>
             </div>
           </section>
 
-        <section class="hotel-3">
+        <section class="hotel">
           <div class="hotel-img">
             <img src="img/hotel-3.jpg" alt="">
           </div>
@@ -145,26 +149,27 @@
             <h3>VILLAS AT PACO DIABLO</h3>
             <p>АПАРТАМЕНТЫ</p>
             <span class="price hotel">ОТ 2000 Р.</span>
+
+            <section class="booking">
+              <a class="details" href="#">Подробнее</a>
+              <button class="booking" href="#">Забронировать</a>
+            </section>
           </div>
-          <section class="booking">
-            <a class="details" href="#">Подробнее</a>
-            <button class="booking" href="#">Забронировать</a>
-          </section>
-          <div class="stars">
-            <span><img src="img/star.svg"></span>
-            <span><img src="img/star.svg"></span>
-          </div>
-          <div class="hotel-rating">
-            <p>РЕЙТИНГ: 9.2</p>
+          <div class="rank">
+            <section class="stars">
+              <span><img src="img/star.svg"></span>
+              <span><img src="img/star.svg"></span>
+            </section>
+            <section class="hotel-rating">
+              <p>РЕЙТИНГ: 9.2</p>
+            </section>
           </div>
         </section>
 
-      </section>
-
+        </section>
       </main>
 
       <footer class="main-footer">
-
         <div class="hashtag"></div>
 
         <nav class="footer-social">
@@ -178,7 +183,6 @@
             <img src="img/logo-htmlacademy.svg" alt="">
             <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         </section>
-
       </div>
     </footer>
   </body>
