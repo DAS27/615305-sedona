@@ -1,9 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial",sans-serif;
   font-size: 14px;
   line-height: 26px;
+  font-weight: normal;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
@@ -12,6 +13,7 @@ body {
 
 a {
   text-decoration: none;
+  background-color: transparent;
 }
 
 .site-navigation {
@@ -93,7 +95,80 @@ a {
   color: #928a85;
 }
 
-.
+.search-hotel {
+  font-family: "PT Sans", 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+input[type="number"]::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+.appointment input[type="text"] {
+  width: 346px;
+  height: 38px;
+  background-color: rgb(242, 242, 242);
+  border: none;
+}
+
+.appointment input[type="number"] {
+  width: 114px;
+  height: 38px;
+  background-color: rgb(242, 242, 242);
+  border: none;
+}
+
+.appointment input:hover {
+  background-color: #ebebeb;
+}
+
+.appointment input:focus {
+  background-color: #ffffff;
+}
+
+.calendar-button {
+  background-color: rgb(242, 242, 242);
+  border: none;
+}
+
+.calendar-button img {
+  color: rgb(202, 202, 202);
+}
+
+.calendar-button img:hover,
+.calendar-button img:focus {
+  color: rgb(0, 0, 0);
+}
+
+.calendar-button img:active {
+  color: rgb(129, 179, 210);
+}
+
+.plus-minus {
+  width: 39px;
+  height: 38px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  color: rgb(169, 169, 169);
+  background-color: rgb(242, 242, 242);
+  border: none;
+}
+
+.plus-minus:hover,
+.plus-minus:focus {
+  color: rgb(0, 0, 0);
+}
 
 .found  {
   font-family: "PT Sans", sans-serif;
@@ -126,19 +201,57 @@ a {
   color: #000000;
 }
 
-.footer-copyright b {
-  font-family: "PT Sans", sans-serif;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: normal;
-  text-transform: uppercase;
+.social-list li {
+  list-style: none;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.button-tw {
+  background-image: url("../img/twitter.svg");
+}
+
+.button-fb {
+  background-image: url("../img/fb-icon.svg");
+}
+
+.button-yt {
+  background-image: url("../img/youtube.svg");
+}
+
+.social-button {
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-size: 0px;
+  line-height: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: rgb(102, 158, 192);
+}
+
+.social-button:active {
+  opacity: 0.3;
+  background-color: rgb(84, 150, 189);
 }
 
 .button-academy {
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 0;
+  line-height: 0;
   background-image: url("../img/logo-htmlacademy.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.filter-infrastructure,
+/*.filter-infrastructure,
 .filter-type,
 .filter-price  {
   border: none;
@@ -147,4 +260,4 @@ a {
 .filter-list,
 .sort-by {
   list-style: none;
-}
+}*/

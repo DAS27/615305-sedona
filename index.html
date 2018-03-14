@@ -103,19 +103,27 @@
                   <form class="search-hotel" action="https://echo.htmlacademy.ru" method="post">
                     <p>
                       <label for="date-in">Дата въезда</label>
-                      <input type="date" id="date-in" name="date-in" value="" placeholder="24 АПРЕЛЯ 2017">
+                      <input type="text" id="date-in" name="date-in" placeholder="24 АПРЕЛЯ 2017">
+                      <button class="calendar-button" type="button">
+                        <img src="img/calendar.svg" alt="Календарь" width="21" height="22">
+                      </button>
                     </p>
                     <p>
                       <label for="date-out">Дата выезда</label>
-                      <input type="date" id="date-out" name="date-out" value="" placeholder="4 ИЮЛЯ 2017">
+                      <input type="text" id="date-out" name="date-out" placeholder="4 ИЮЛЯ 2017">
+                      <button class="calendar-button" type="button">
+                        <img src="img/calendar.svg" alt="Календарь" width="21" height="22">
+                      </button>
                     </p>
                     <p>
                       <label for="adult">Взрослые</label>
-                      <input type="number" id="adult" name="adult" value="">
-                    </p>
-                    <p>
+                      <button class="minus-plus" type="button">-</button>
+                      <input type="number" id="adult" name="adult" placeholder="2">
+                      <button class="minus-plus" type="button">+</button>
                       <label for="children">Дети</label>
-                      <input type="number" id="children" name="children" value="">
+                      <button class="minus-plus" type="button">-</button>
+                      <input type="number" id="children" name="children" placeholder="0">
+                      <button class="minus-plus" type="button">+</button>
                     </p>
                     <button class="found" type="submit">Найти</button>
                   </form>
@@ -130,13 +138,15 @@
         <div class="hashtag">#VISITSEDONA</div>
 
         <nav class="footer-social">
-            <a class="social-button social-button-tw" href="https://twitter.com/" aria-label="Твиттер"></a>
-            <a class="social-button social-button-fb" href="https://facebook.com/" aria-label="Фейсбук"></a>
-            <a class="social-button social-button-yt" href="https://youtube.com/" aria-label="Ютуб"></a>
+          <ul class="social-list">
+            <li><a class="social-button button-tw" href="https://twitter.com/" aria-label="Твиттер"></a></li>
+            <li><a class="social-button button-fb" href="https://facebook.com/" aria-label="Фейсбук"></a></li>
+            <li><a class="social-button button-yt" href="https://youtube.com/" aria-label="Ютуб"></a></li>
+          </ul>
         </nav>
 
         <section class="footer-copyright">
-          <b>WEBSITE BY:</b>
+          <p>WEBSITE BY: </p>
             <a class="button-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         </section>
       </div>
