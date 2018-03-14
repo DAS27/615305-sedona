@@ -137,21 +137,21 @@ input[type="number"]::-webkit-input-placeholder {
 }
 
 .calendar-button {
-  background-color: rgb(242, 242, 242);
+  background-color: transparent;
   border: none;
 }
 
-.calendar-button img {
-  color: rgb(202, 202, 202);
+.calendar-button {
+  fill: rgb(202, 202, 202);
 }
 
-.calendar-button img:hover,
-.calendar-button img:focus {
-  color: rgb(0, 0, 0);
+.calendar-button:hover,
+.calendar-button:focus {
+  fill: rgb(0, 0, 0);
 }
 
-.calendar-button img:active {
-  color: rgb(129, 179, 210);
+.calendar-button:active {
+  fill: rgb(129, 179, 210);
 }
 
 .plus-minus {
@@ -241,14 +241,20 @@ input[type="number"]::-webkit-input-placeholder {
 }
 
 .button-academy {
-  width: 100%;
-  height: 100%;
-  display: block;
-  font-size: 0;
-  line-height: 0;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 115px;
+}
+
+.button-academy svg {
+  width: 115px;
+  height: 41px;
+}
+
+.button-academy:hover svg path {
+  fill: #81b3d2;
+}
+
+.button-academy:active svg path {
+  fill: #bdbbbc;
 }
 
 /*.filter-infrastructure,
