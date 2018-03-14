@@ -139,6 +139,7 @@ input[type="number"]::-webkit-input-placeholder {
 .calendar-button {
   background-color: transparent;
   border: none;
+  outline: transparent;
 }
 
 .calendar-button {
@@ -154,19 +155,22 @@ input[type="number"]::-webkit-input-placeholder {
   fill: rgb(129, 179, 210);
 }
 
-.plus-minus {
-  width: 39px;
-  height: 38px;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 26px;
-  color: rgb(169, 169, 169);
-  background-color: rgb(242, 242, 242);
+.minus {
+
+}
+.plus {
+  background-image: url("../img/plus.png");
+  background-size: 11px, 11px;
+  background-repeat: no-repeat;
+  background-color: transparent;
   border: none;
+  font-size
 }
 
-.plus-minus:hover,
-.plus-minus:focus {
+.plus,
+.minus:hover,
+.plus,
+.minus:focus {
   color: rgb(0, 0, 0);
 }
 
