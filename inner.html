@@ -11,7 +11,7 @@
     <div class="container">
       <header class="header">
         <nav class="main-navigation">
-          <a class="main-header-logo">
+          <a class="main-header-logo" href="index.html">
             <img class="logo" src="img/logo.png" width="138" height="70" alt="Логотип Седона">
           </a>
           <ul class="site-navigation">
@@ -27,23 +27,25 @@
         <section class="filter-form">
           <section class="form-characteristic">
             <form class="filter-hotel-search" action="https://echo.htmlacademy.ru" method="post">
-              <fieldset>
-                <legend>Инфраструктура:</legend>
-                  <ul class="filter-infrastructure">
-                    <li>
-                      <label for="filter-swimming-pool">Бассейн</label>
-                      <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
-                    </li>
-                    <li>
-                      <label for="filter-parking">Парковка</label>
-                      <input type="checkbox" name="parking">
-                    </li>
-                    <li>
-                      <label for="filter-wi-fi">Wi-Fi</label>
-                      <input type="checkbox" name="wi-fi">
-                    </li>
-                  </ul>
-              </fieldset>
+              <section>
+                <fieldset>
+                  <legend>Инфраструктура:</legend>
+                    <ul class="filter-infrastructure">
+                      <li>
+                        <label for="filter-swimming-pool">Бассейн</label>
+                        <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+                      </li>
+                      <li>
+                        <label for="filter-parking">Парковка</label>
+                        <input type="checkbox" name="parking">
+                      </li>
+                      <li>
+                        <label for="filter-wi-fi">Wi-Fi</label>
+                        <input type="checkbox" name="wi-fi">
+                      </li>
+                    </ul>
+                </fieldset>
+              </section>
               <fieldset>
                 <legend>Тип жилья</legend>
                   <ul class="filter-type">
@@ -62,13 +64,16 @@
                   </ul>
               </fieldset>
               <section>
-                <fieldset class="filter-price">
+                <fieldset>
                   <legend>Стоймость в сутки(Р)</legend>
-                  <label for="price"></label>
-                  <div type="range" id="price" name="price"></div>
+                    <label for="price"></label>
+                      <section class="filter-price">ОТ 0 ДО 3000</section>
+                      <div>
+                      <input type="range" id="price">
+                      </div>
                 </fieldset>
               </section>
-              <button class="btn-show" type="submit" name="button"></button>
+              <button class="btn-show" type="submit" name="button">Показать</button>
             </form>
           </section>
         </section>
@@ -86,7 +91,7 @@
               </ul>
           </section>
             <section class="sort-result">
-              <a href="#"><span class="sort-up"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></span></a> 
+              <a href="#"><span class="sort-up"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></span></a>
               <a href="#"><span class="sort-down"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></span></a>
           </section>
         </div>
@@ -97,13 +102,13 @@
                 <img src="img/hotel-1.jpg" width="135" height="90" alt="Отель Амара">
               </div>
               <div class="hotel-info">
-                <h3>AMARA RESORT & SPA</h3>
+                <a href="#"><h3>AMARA RESORT & SPA</h3></a>
                 <p>ГОСТИНИЦА</p>
                 <span class="price hotel">ОТ 4000 Р.</span>
 
                 <section class="booking">
-                  <a class="details" href="#">Подробнее</a>
-                  <button class="booking" href="#">Забронировать</a>
+                  <button class="details-btn" href="#">Подробнее</button>
+                  <button class="booking-btn" href="#">Забронировать</button>
                 </section>
               </div>
 
@@ -125,13 +130,13 @@
               <img src="img/hotel-2.jpg" width="135" height="90" alt="Мотель Десерт куалин инн">
             </div>
             <div class="hotel-info">
-              <h3>DESERT QUALIN INN</h3>
+              <a href="#"><h3>DESERT QUALIN INN</h3></a>
               <p>МОТЕЛЬ</p>
               <span class="price hotel">ОТ 3000 Р.</span>
 
-              <section class="booking">
-                <a class="details" href="#">Подробнее</a>
-                <button class="booking" href="#">Забронировать</a>
+              <section class="button">
+                <button class="details-btn" href="#">Подробнее</button>
+                <button class="booking-btn" href="#">Забронировать</button>
               </section>
             </div>
 
@@ -152,13 +157,13 @@
             <img src="img/hotel-3.jpg" width="135" height="90" alt="Аппартаменты Виллас Пако Диабло">
           </div>
           <div class="hotel-info">
-            <h3>VILLAS AT PACO DIABLO</h3>
+            <a href="#"><h3>VILLAS AT PACO DIABLO</h3></a>
             <p>АПАРТАМЕНТЫ</p>
             <span class="price hotel">ОТ 2000 Р.</span>
 
             <section class="booking">
-              <a class="details" href="#">Подробнее</a>
-              <button class="booking" href="#">Забронировать</a>
+              <button class="details-btn" href="#">Подробнее</button>
+              <button class="booking-btn" href="#">Забронировать</button>
             </section>
           </div>
 

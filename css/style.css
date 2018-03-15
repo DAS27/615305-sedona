@@ -27,8 +27,7 @@ a {
   color: #000000;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:hover {
   color: #81b3d2;
 }
 
@@ -154,7 +153,19 @@ input[type="number"]::-webkit-input-placeholder {
   fill: rgb(129, 179, 210);
 }
 
-/* .minus { */
+.minus {
+  background-image: url("../img/minus.png");
+  background-size: 11px, 11px;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  background-position: center center;
+  border: none;
+  text-indent: -9999px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 38px;
+  cursor: pointer;
+}
 
 .plus {
   background-image: url("../img/plus.png");
@@ -170,12 +181,12 @@ input[type="number"]::-webkit-input-placeholder {
   cursor: pointer;
 }
 
-/* .plus,
+.plus,
 .minus:hover,
 .plus,
 .minus:focus {
   color: rgb(0, 0, 0);
-} */
+}
 
 .found  {
   font-family: "PT Sans", sans-serif;
@@ -280,6 +291,18 @@ input[type="number"]::-webkit-input-placeholder {
   color: #ffffff;
 }
 
+input [type="checkbox"] {
+  display: none;
+}
+
+.filter-price {
+  width: 220px;
+  height: 32px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  text-align: center;
+}
+
 legend {
   font-size: 16px;
   line-height: 21px;
@@ -305,7 +328,7 @@ fieldset {
 .sort p {
   font-size: 12px;
   font-weight: normal;
-  line-height: 18px;  
+  line-height: 18px;
 }
 
 .sort a {
@@ -313,15 +336,34 @@ fieldset {
   font-weight: normal;
   line-height: 18px;
   color: #dadada;
+  border-bottom: 1px dashed rgb(129, 179, 210);
+
 }
 
-.sort a:hover,
-.sort a:focus {
+.btn-show {
+  width: 137px;
+  height: 36px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.btn-show:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.sort a:hover {
   color: #81b3d2;
 }
 
 .sort a:active {
   color: #000000;
+  border-bottom: none;
 }
 
 .sort-result svg path {
@@ -335,4 +377,72 @@ fieldset {
 .sort-result svg path:focus,
 .sort-result svg path:active {
   fill: #81b3d2;
+}
+
+.details-btn {
+  width: 110px;
+  height: 27px;
+  background-color: #81b3d2;
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+}
+
+.details-btn:hover {
+  background-color: #669ec0;
+}
+
+.details-btn:active {
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+
+.booking-btn {
+  width: 142px;
+  height: 27px;
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 21px;
+  background-color: #766357;
+  border: none;
+}
+
+.booking-btn:hover {
+  background-color: #604e43;
+}
+
+.booking-btn:active {
+  background-color: #503e33;
+  color: #928a85;
+}
+
+.hotel-rating {
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  vertical-align: center;
+  color: #666666;
+}
+
+.hotel-info a {
+  color: #000000;
+}
+
+.hotel-info a:hover {
+  color: #81b3d2;
+}
+
+.hotel-info a:active {
+  color: #cacaca;
 }
