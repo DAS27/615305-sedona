@@ -11,9 +11,8 @@ body {
   background-color: #ffffff;
 }
 
-a {
+.container a {
   text-decoration: none;
-  background-color: transparent;
 }
 
 .site-navigation {
@@ -405,6 +404,7 @@ fieldset {
 }
 
 .details-btn {
+  display: inline-block;
   width: 110px;
   height: 27px;
   background-color: #81b3d2;
