@@ -12,7 +12,7 @@ body {
   background-color: #ffffff;
 }
 
-.header {
+.main-header {
   margin-bottom: 0;
   min-height: 56px;
 }
@@ -21,25 +21,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 56px;
+  min-height: 56px;
   background-color: transparent;
 }
 
 .main-header-logo {
-  order: 0;
+  order: 5;
   width: 138px;
   height: 70px;
 }
 
-.site-navigation-wrapper {
+.main-navigation-wrapper {
   width: 100%;
   min-height: 56px;
   background-color: transparent;
 }
 
-.site-navigation-wrapper .container-wrapper {
+.main-navigation-wrapper .container-wrapper {
   display: flex;
-  justify-content: space-between;
 }
 
 .site-navigation {
@@ -79,16 +78,24 @@ body {
   color: #cacaca;
 }
 
-/* .site-navigation a:visited {
-  color: #766357;
-} */
-
 .slogan {
   width: 100%;
   height: 564px;
+  margin-bottom: 65px;
   background-image: url("../img/background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+.intro {
+  width: 100%;
+  min-height: 95px;
+  margin-bottom: 58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
 }
 
 .feature-list {
