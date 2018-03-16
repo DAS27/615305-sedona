@@ -460,14 +460,14 @@ fieldset {
   color: #666666;
 }
 
-.hotel-info a {
+.hotel-info h3 {
   color: #000000;
 }
 
-.hotel-info a:hover {
+.hotel-info h3:hover {
   color: #81b3d2;
 }
 
-.hotel-info a:active {
+.hotel-info h3:active {
   color: #cacaca;
 }
