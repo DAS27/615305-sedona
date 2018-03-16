@@ -298,13 +298,13 @@ body {
 
 }
 
-legend {
+.filter-form legend {
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
 }
 
-fieldset {
+.filter-form fieldset {
   border: none;
 }
 
@@ -404,7 +404,6 @@ fieldset {
 }
 
 .details-btn {
-  display: inline-block;
   width: 110px;
   height: 27px;
   background-color: #81b3d2;
