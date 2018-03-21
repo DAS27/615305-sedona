@@ -1,69 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  min-width: 1200px;
-  font-family: "PT Sans", "Arial",sans-serif;
+
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+
+  background-color: #f2f2f2;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+
   background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .main-header {
-  margin-bottom: 0;
   min-height: 56px;
-}
-
-.main-navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 56px;
-  background-color: transparent;
 }
 
 .main-header-logo {
-  display: block;
-  position: absolute;
-  left: auto;
-  top: 0px;
   width: 138px;
   height: 70px;
-  z-index: 91;
-}
 
-.main-navigation-wrapper {
-  width: 100%;
-  min-height: 56px;
-  background-color: transparent;
-}
-
-.main-navigation-wrapper .container-wrapper {
-  display: flex;
-}
-
-.site-navigation {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 56px;
-  background-color: transparent;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.container-wrapper {
-  width: 1056px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-.container a {
-  text-decoration: none;
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -69px;
+  top: 0;
 }
 
 .site-navigation {
@@ -71,6 +63,22 @@ body {
   font-weight: bold;
   line-height: 26px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-navigation li {
+  line-height: 26px;
+}
+
+.site-navigation a {
+  text-decoration: none;
 }
 
 .site-navigation a {
