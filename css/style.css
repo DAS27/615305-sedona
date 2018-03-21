@@ -9,7 +9,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
-  font-weight: normal;
+  font-weight: 400;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
@@ -70,11 +70,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-}
-
-.site-navigation li {
-  line-height: 26px;
+  justify-content: space-around;
 }
 
 .site-navigation a {
@@ -96,7 +92,7 @@ input[type="radio"].visually-hidden {
 .slogan {
   width: 100%;
   height: 564px;
-  margin-bottom: 65px;
+  margin-bottom: 60px;
   background-image: url("../img/background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -105,7 +101,6 @@ input[type="radio"].visually-hidden {
 .intro {
   width: 100%;
   min-height: 95px;
-  margin-bottom: 58px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,8 +109,19 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
+.intro h2 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 38px;
+}
+
+.intro p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 56px;
+}
+
 .feature {
-  width: 100%;
   min-height: 256px;
   display: flex;
   flex-direction: row;
@@ -126,6 +132,8 @@ input[type="radio"].visually-hidden {
 .feature-text {
   width: 400px;
   height: 256px;
+  padding: 46px 60px 65px 60px;
+  margin: 0;
   margin-bottom: 55px;
   font-size: 14px;
   line-height: 21px;
@@ -139,10 +147,6 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
 }
 
-.feature-image {
-  order: 2;
-}
-
 .promote {
   display: flex;
   flex-direction: row;
@@ -150,30 +154,40 @@ input[type="radio"].visually-hidden {
   justify-content: space-around;
 }
 
+.promote img {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.promote h2 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+}
+
+.promote p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 86px;
+}
+
 .more-feature {
-  width: 100%;
   min-height: 256px;
-  margin-bottom: 85px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+
   background-color: #eeeeee;
 }
 
 .feature-list {
-  width: 100%;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-around;
   list-style: none;
 }
 
-.feature-list-item {
-  text-align: center;
-}
 .search {
-  font-family: "PT Sans", sans-serif;
   font-size: 21px;
-  line-height: 26px;
   font-weight: bold;
   width: 568px;
   height: 86px;
