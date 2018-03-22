@@ -122,6 +122,8 @@ input[type="radio"].visually-hidden {
 }
 
 .feature {
+  margin: 0;
+  padding: 0;
   min-height: 256px;
   display: flex;
   flex-direction: row;
@@ -134,7 +136,6 @@ input[type="radio"].visually-hidden {
   height: 256px;
   padding: 46px 60px 65px 60px;
   margin: 0;
-  margin-bottom: 55px;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
@@ -142,12 +143,21 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-text h2 {
+  margin: 0;
+  padding: 0;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
 }
 
+.feature img {
+  margin: 0;
+  display: inherit;
+}
+
 .promote {
+  margin: 0;
+  padding-top: 55px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -179,6 +189,9 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
