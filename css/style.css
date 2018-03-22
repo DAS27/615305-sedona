@@ -64,7 +64,7 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 15px;
 
 
   display: flex;
@@ -207,9 +207,14 @@ input[type="radio"].visually-hidden {
 }
 
 .search-hotel {
-  font-family: "PT Sans", 'Arial', sans-serif;
+  width: 600px;
+  height: 425px;
   font-size: 14px;
   font-weight: bold;
+
+  background-color: #ffffff;
+
+  position: absolute;
 }
 
 .search-hotel input[type="text"]::-webkit-input-placeholder {
