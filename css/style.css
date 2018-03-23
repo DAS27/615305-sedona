@@ -156,8 +156,9 @@ input[type="radio"].visually-hidden {
 }
 
 .promote {
+  min-height: 330px;
   margin: 0;
-  padding-top: 55px;
+  padding: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -165,9 +166,12 @@ input[type="radio"].visually-hidden {
 }
 
 .promote img {
+  width: 75px;
+  height: 72px;
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
+  margin-top: 55px;
 }
 
 .promote h2 {
@@ -191,12 +195,29 @@ input[type="radio"].visually-hidden {
 .feature-list {
   margin: 0;
   padding: 0;
-  padding-top: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   list-style: none;
+}
+
+.feature-list-item {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.appointment h2 {
+  margin: 0;
+  padding: 0;
+  padding-top: 55px;
+}
+
+.appointment-info {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .search {
@@ -210,6 +231,10 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+/* .search-hotel p {
+  margin: 50px;
+} */
+
 .search:hover {
   background-color: #604e43;
 }
@@ -220,14 +245,14 @@ input[type="radio"].visually-hidden {
 }
 
 .search-hotel {
-  width: 600px;
-  height: 425px;
+  width: 570px;
+  height: 395px;
   font-size: 14px;
   font-weight: bold;
-
   background-color: #ffffff;
-
   position: absolute;
+  left: 50%;
+  margin-left: -285px;
 }
 
 .search-hotel input[type="text"]::-webkit-input-placeholder {
