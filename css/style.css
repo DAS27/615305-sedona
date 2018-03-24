@@ -428,15 +428,15 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-form {
-  width: 100%;
-  height: 100%;
   background-image: url("../img/filterbackground.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: row;
 }
 
-.filter-hotel-search {
-  font-family: "PT Sans", "Arial", sans-serif;
+.form-hotel-search {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -665,6 +665,19 @@ input[type="radio"].visually-hidden {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+.inner-footer-container {
+  display: flex;
+  min-height: 120px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: #ffffff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
 }
 
 .social-list {
