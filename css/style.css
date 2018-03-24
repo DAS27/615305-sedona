@@ -341,8 +341,6 @@ input[type="radio"].visually-hidden {
 }
 
 .found  {
-  font-family: "PT Sans", sans-serif;
-  text-transform: uppercase;
   width: 458px;
   height: 58px;
   font-size: 21px;
@@ -363,8 +361,6 @@ input[type="radio"].visually-hidden {
 }
 
 .hashtag {
-  font-family: "PT Sans", sans-serif;
-  text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -428,12 +424,10 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-form {
+  min-height: 215px;
   background-image: url("../img/filterbackground.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-
-  display: flex;
-  flex-direction: row;
 }
 
 .form-hotel-search {
@@ -441,7 +435,23 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   font-weight: normal;
   color: #ffffff;
+
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 30px;
+
+  display: flex;
+  justify-content: space-between;
 }
+
+.filter-with-checkbox {
+  display: flex;
+}
+
+.type-hotels {
+  margin-right: 20px;
+}
+
 
 .filter-price {
   width: 220px;
@@ -491,7 +501,7 @@ input[type="radio"].visually-hidden {
 
 .filter-infrastructure input[type="checkbox"]:checked ~ label:before {
   content: "";
-  width: 23px;
+  width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
 }
@@ -520,18 +530,34 @@ input[type="radio"].visually-hidden {
 
 .filter-type input[type="checkbox"]:checked ~ label:before {
   content: "";
-  width: 23px;
+  width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
 }
 
+.result {
+  min-height: 85px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.found-results {
+  padding-top: 30px;
+  padding-left: 73px;
+}
+
 .result p {
+  margin: 0;
+  padding: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 
 .sort p {
+  margin: 0;
+  padding: 0;
   font-size: 12px;
   font-weight: normal;
   line-height: 18px;
@@ -626,6 +652,13 @@ input[type="radio"].visually-hidden {
 .booking-btn:active {
   background-color: #503e33;
   color: #928a85;
+}
+
+.hotel {
+  display: flex;
+  justify-content: space-between;
+  min-height: 150px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-rating {
