@@ -536,15 +536,21 @@ input[type="radio"].visually-hidden {
 }
 
 .result {
-  min-height: 85px;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #e5e5e5;
 }
 
+.view-results {
+  display: flex;
+}
+
 .found-results {
-  padding-top: 30px;
-  padding-left: 73px;
+  margin-right: 50px;
 }
 
 .result p {
@@ -555,9 +561,25 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
 }
 
+.sort-by {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  line-height: 18px;
+}
+
+.sort-by li {
+  margin-right: 30px;
+}
+
+.sort {
+  display: flex;
+}
+
 .sort p {
   margin: 0;
   padding: 0;
+  margin-right: 20px;
   font-size: 12px;
   font-weight: normal;
   line-height: 18px;
