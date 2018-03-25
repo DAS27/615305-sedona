@@ -620,6 +620,10 @@ input[type="radio"].visually-hidden {
   border-bottom: none;
 }
 
+.sort-result a {
+  padding-right: 10px;
+}
+
 .sort-result svg path {
   fill: #cacaca;
 }
@@ -679,8 +683,11 @@ input[type="radio"].visually-hidden {
 .hotel {
   display: flex;
   justify-content: space-between;
-  min-height: 150px;
   border-bottom: 1px solid #e5e5e5;
+  padding-right: 6%;
+  padding-left: 6%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .hotel-rating {
@@ -693,8 +700,13 @@ input[type="radio"].visually-hidden {
   color: #666666;
 }
 
+.hotel-info {
+  text-align: left;
+}
+
 .hotel-info h3 {
   color: #000000;
+  margin-top: 0;
 }
 
 .hotel-info h3:hover {
@@ -703,6 +715,26 @@ input[type="radio"].visually-hidden {
 
 .hotel-info h3:active {
   color: #cacaca;
+}
+
+.hotel-price {
+  padding-bottom: 20px;
+}
+
+.hotel-price span {
+  padding-right: 33px;
+}
+
+.hotel-details {
+  display: flex;
+}
+
+.hotel-img {
+  margin-right: 30px;
+}
+
+.stars {
+  margin-bottom: 45px;
 }
 
 .main-footer {
