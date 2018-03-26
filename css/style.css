@@ -501,6 +501,11 @@ input[type="radio"].visually-hidden {
   margin-left: 90px;
 }
 
+.filter-form-type legend{
+  padding-right: 30px;
+}
+
+
 .sort {
   padding-top: 7px;
 }
