@@ -26,7 +26,7 @@
       <main class="container">
         <section class="filter-form">
           <form class="form-hotel-search" action="https://echo.htmlacademy.ru" method="post">
-            <div class="filter-with-checkbox">              
+            <div class="filter-with-checkbox">
               <fieldset class="filter-form-infastructure">
                 <legend>Инфраструктура:</legend>
                 <ul class="filter-infrastructure">
@@ -65,19 +65,25 @@
               </div>
             </div>
             <div class="filter-with-price">
-              <fieldset class="filter-form-price">
-                <legend>Стоймость в сутки(Р)</legend>
-                <label for="price"></label>
-                <section class="filter-price">ОТ 0 ДО 3000</section>
-                <div>
-                  <input type="range" id="price">
+              <div class="filter-range">
+                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                 </div>
-              </fieldset>
-              <button class="btn-show" type="submit" name="button">Показать</button>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="btn-transparent" type="submit">Показать</button>
+              </div>
             </div>
           </form>
         </section>
-          
+
         <section class="result">
           <div class="view-results">
             <section class="found-results">
@@ -90,7 +96,7 @@
                   <li class="type"><a href="#">По типу</a></li>
                   <li class="rating"><a href="#">По рейтингу</a></li>
                 </ul>
-              </p> 
+              </p>
             </section>
           </div>
           <div>
@@ -100,7 +106,7 @@
             </section>
           </div>
         </section>
-          
+
           <section class="result-search">
             <section class="hotel">
               <div class="hotel-details">
@@ -113,7 +119,7 @@
                     <span>ГОСТИНИЦА</span>
                     <span>ОТ 4000 Р.</span>
                   </div>
-                  
+
                   <section class="booking">
                     <button class="details-btn">Подробнее</button>
                     <button class="booking-btn">Забронировать</button>
@@ -145,14 +151,14 @@
                   <span>МОТЕЛЬ</span>
                   <span>ОТ 3000 Р.</span>
                 </div>
-                
+
                 <section class="button">
                   <button class="details-btn">Подробнее</button>
                   <button class="booking-btn">Забронировать</button>
                 </section>
               </div>
             </div>
-              
+
             <div class="rank">
               <section class="stars">
                 <span><img src="img/star.svg"></span>
@@ -176,14 +182,14 @@
               <span>АПАРТАМЕНТЫ</span>
               <span>ОТ 2000 Р.</span>
             </div>
-            
+
             <section class="booking">
               <button class="details-btn">Подробнее</button>
               <button class="booking-btn">Забронировать</button>
             </section>
           </div>
         </div>
-          
+
           <div class="rank">
             <section class="stars">
               <span><img src="img/star.svg"></span>
@@ -198,10 +204,10 @@
         </section>
       </main>
 
-      <footer class="inner-footer">          
+      <footer class="inner-footer">
           <div class="inner-footer-container">
             <section class="hashtag">#VISITSEDONA</section>
-  
+
             <section class="footer-social">
               <ul class="social-list">
                 <li><a class="social-button button-tw" href="https://twitter.com/" aria-label="Твиттер"></a></li>
@@ -209,7 +215,7 @@
                 <li><a class="social-button button-yt" href="https://youtube.com/" aria-label="Ютуб"></a></li>
               </ul>
             </section>
-  
+
             <section class="footer-copyright">
               <p>WEBSITE BY: </p>
               <a class="button-academy" href="https://htmlacademy.ru/intensive/htmlcss">
