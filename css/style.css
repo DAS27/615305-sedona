@@ -1,3 +1,4 @@
+/* Всем */
 * {
   box-sizing: border-box;
 }
@@ -17,6 +18,7 @@ body {
   background-color: #f2f2f2;
 }
 
+/* Скрыть все элементы */
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -35,6 +37,7 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+/* Контейнер */
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -43,6 +46,7 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
+/* Хедер */
 .main-header {
   min-height: 56px;
   position: relative;
@@ -90,10 +94,7 @@ input[type="radio"].visually-hidden {
   color: #cacaca;
 }
 
-.site-navigation li:nth-child(2) {
-  justify-content: flex-start;
-}
-
+/* Контент */
 .slogan {
   width: 100%;
   height: 564px;
@@ -403,6 +404,24 @@ input[type="radio"].visually-hidden {
   color: #94b9d2;
 }
 
+/* Футер */
+.main-footer {
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  min-height: 120px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(256, 256, 256, .8);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 .hashtag {
   font-size: 21px;
   line-height: 26px;
@@ -415,18 +434,6 @@ input[type="radio"].visually-hidden {
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
-}
-
-.button-tw {
-  background-image: url("../img/twitter.svg");
-}
-
-.button-fb {
-  background-image: url("../img/fb-icon.svg");
-}
-
-.button-yt {
-  background-image: url("../img/youtube.svg");
 }
 
 .social-button {
@@ -449,6 +456,18 @@ input[type="radio"].visually-hidden {
   background-color: rgb(84, 150, 189);
 }
 
+.button-tw {
+  background-image: url("../img/twitter.svg");
+}
+
+.button-fb {
+  background-image: url("../img/fb-icon.svg");
+}
+
+.button-yt {
+  background-image: url("../img/youtube.svg");
+}
+
 .button-academy {
   width: 115px;
 }
@@ -466,6 +485,7 @@ input[type="radio"].visually-hidden {
   fill: #bdbbbc;
 }
 
+/* Внутреняя страница */
 .filter-form {
   min-height: 215px;
   background-image: url("../img/filterbackground.jpg");
@@ -489,14 +509,8 @@ input[type="radio"].visually-hidden {
 
 .filter-with-checkbox {
   display: flex;
+  text-align: start;
 }
-
-/* .filter-price {
-  width: 220px;
-  height: 32px;
-  background-color: transparent;
-  border: 2px solid #ffffff;
-} */
 
 .form-hotel-search legend {
   font-size: 16px;
@@ -513,29 +527,6 @@ input[type="radio"].visually-hidden {
 .sort-by {
   padding-left: 30px;
   list-style: none;
-}
-
-.filter-with-checkbox {
-  text-align: start;
-}
-
-
-
-.filter-form-type {
-  margin-left: 90px;
-}
-
-.filter-form-type legend{
-  padding-right: 30px;
-}
-
-
-.sort {
-  padding-top: 7px;
-}
-
-.filter-with-checkbox li {
-  padding-bottom: 23px;
 }
 
 .filter-infrastructure input[type="checkbox"] {
@@ -593,6 +584,22 @@ input[type="radio"].visually-hidden {
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-form-type {
+  margin-left: 90px;
+}
+
+.filter-form-type legend{
+  margin-left: 15px;
+}
+
+.sort {
+  padding-top: 7px;
+}
+
+.filter-with-checkbox li {
+  padding-bottom: 23px;
 }
 
 .result {
@@ -698,6 +705,16 @@ input[type="radio"].visually-hidden {
   fill: #81b3d2;
 }
 
+.hotel {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+  padding-right: 6%;
+  padding-left: 6%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .details-btn {
   width: 110px;
   height: 27px;
@@ -741,15 +758,6 @@ input[type="radio"].visually-hidden {
   color: #928a85;
 }
 
-.hotel {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #e5e5e5;
-  padding-right: 6%;
-  padding-left: 6%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 
 .hotel-rating {
   width: 110px;
@@ -762,7 +770,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel a {
-  outline: none;
+  text-decoration: none;
 }
 
 .hotel-info {
@@ -802,22 +810,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 45px;
 }
 
-.main-footer {
-  position: relative;
-}
 
-.footer-container {
-  display: flex;
-  min-height: 120px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  background: rgba(256, 256, 256, .8);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
 
 .inner-footer-container {
   display: flex;
@@ -852,7 +845,6 @@ input[type="radio"].visually-hidden {
 
 .filter-range {
   width: 330px;
-
 
   color: #ffffff;
   text-transform: uppercase;
