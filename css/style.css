@@ -90,6 +90,10 @@ input[type="radio"].visually-hidden {
   color: #cacaca;
 }
 
+.site-navigation li:nth-child(2) {
+  justify-content: flex-start;
+}
+
 .slogan {
   width: 100%;
   height: 564px;
@@ -157,22 +161,12 @@ input[type="radio"].visually-hidden {
 }
 
 .promote {
-  min-height: 330px;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-}
-
-.promote img {
-  width: 75px;
-  height: 72px;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 30px;
-  margin-top: 55px;
 }
 
 .promote h2 {
@@ -184,7 +178,32 @@ input[type="radio"].visually-hidden {
 .promote p {
   margin: 0;
   padding: 0;
-  padding-bottom: 86px;
+  padding-bottom: 65px;
+}
+
+.promote-item {
+  padding-top: 165px;
+}
+
+#house {
+  background-image: url(../img/icon-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 70px;
+}
+
+#food {
+  background-image: url(../img/icon-2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 70px;
+}
+
+#souvenirs {
+  background-image: url(../img/icon-3.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 70px;
 }
 
 .more-feature {
@@ -494,8 +513,13 @@ input[type="radio"].visually-hidden {
 .sort-by {
   padding-left: 30px;
   list-style: none;
+}
+
+.filter-with-checkbox {
   text-align: start;
 }
+
+
 
 .filter-form-type {
   margin-left: 90px;
@@ -732,6 +756,10 @@ input[type="radio"].visually-hidden {
   color: #666666;
 }
 
+.hotel a {
+  outline: none;
+}
+
 .hotel-info {
   text-align: left;
 }
@@ -819,7 +847,7 @@ input[type="radio"].visually-hidden {
 
 .filter-range {
   width: 330px;
-  /* margin: 50px auto; для демо */
+
 
   color: #ffffff;
   text-transform: uppercase;
@@ -870,7 +898,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 155px;
+  width: 90px;
   padding-left: 65px;
 }
 
@@ -906,7 +934,7 @@ input[type="radio"].visually-hidden {
 
 .range-toggle {
   position: absolute;
-  top: -7px;
+  top: -9px;
 
   width: 4px;
   height: 4px;
