@@ -756,6 +756,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel-info h3 {
+  font-size: 21px;
   color: #000000;
   margin-top: 0;
   margin-bottom: 5px;
