@@ -297,12 +297,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   font-weight: bold;
   color: #000000;
-}
-
-.search-hotel input[type="number"]::-webkit-input-placeholder {
-  font-size: 14px;
-  font-weight: bold;
-  color: #000000;
+  padding-left: 12px;
 }
 
 .date-choice  {
@@ -313,25 +308,14 @@ input[type="radio"].visually-hidden {
 }
 
 .date-choice input {
-  padding-left: 12px;
-}
-
-.search-hotel label {
-  padding-right: 20px;
-}
-
-.appointment input[type="text"] {
   width: 346px;
   height: 38px;
   background-color: rgb(242, 242, 242);
   border: none;
 }
 
-.appointment input[type="number"] {
-  width: 114px;
-  height: 38px;
-  background-color: rgb(242, 242, 242);
-  border: none;
+.search-hotel label {
+  margin-right: 20px;
 }
 
 .appointment input:hover {
