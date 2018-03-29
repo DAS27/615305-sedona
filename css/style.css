@@ -97,12 +97,21 @@ input[type="radio"].visually-hidden {
   line-height: 56px;
 }
 
+.main-navigation li:first-child {
+  padding-right: 4px;
+}
+
 .main-navigation li:nth-child(2) {
   margin-right: auto;
+  padding-left: 4px;
 }
 
 .main-navigation li:nth-child(3) {
   margin-left: auto;
+}
+
+.main-navigation li:last-child {
+  padding-left: 17px;
 }
 
 .site-navigation {
@@ -717,23 +726,10 @@ input[type="radio"].visually-hidden {
   margin-right: 30px;
 }
 
-/* Кнопка "ПОКАЗАТЬ" */
-/* .btn-show {
-  width: 137px;
-  height: 36px;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  text-transform: uppercase;
-  color: #ffffff;
+.price .catalog-current {
+  color: #81b3d2;
+  border-bottom: none;
 }
-
-.btn-show:hover {
-  background-color: #ffffff;
-  color: #000000;
-} */
 
 .sort-result svg path {
   fill: #cacaca;
