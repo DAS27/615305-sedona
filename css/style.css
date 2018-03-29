@@ -450,7 +450,8 @@ input[type="radio"].visually-hidden {
 
 .footer-container {
   display: flex;
-  min-height: 120px;
+  padding-bottom: 33px;
+  padding-top: 23px;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -463,9 +464,14 @@ input[type="radio"].visually-hidden {
 
 .hashtag {
   font-size: 21px;
+  padding-left: 27px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+}
+
+.footer-social {
+  padding-right: 9px;
 }
 
 .social-list {
@@ -524,6 +530,8 @@ input[type="radio"].visually-hidden {
 }
 
 .button-academy {
+  padding-left: 4px;
+  padding-top: 10px;
   width: 115px;
 }
 
