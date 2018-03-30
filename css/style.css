@@ -549,129 +549,48 @@ input[type="radio"].visually-hidden {
 }
 
 /* Внутреняя страница */
-.filter-form {
-  min-height: 215px;
-  background-image: url("../img/filterbackground.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
 .form-hotel-search {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
-  color: #ffffff;
-
-  padding-left: 6%;
-  padding-right: 6%;
-  padding-top: 24px;
-
   display: flex;
-  justify-content: space-between;
-  box-sizing: content-box;
+  background-image: url("../img/filterbackground.jpg");
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 30px;
+  padding-right: 73px;
+  padding-left: 73px;
+  padding-bottom: 29px;
 }
 
-.filter-with-checkbox {
-  display: flex;
-  text-align: start;
+.form-hotel-search li:first-child {
+  margin-top: -2px;
+  margin-bottom: 20px;
 }
 
-.form-hotel-search legend {
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: bold;
+.form-hotel-search li:nth-child(2) {
+  margin-bottom: 20px;
 }
 
-.filter-form fieldset {
+.form-hotel-search .filter-form {
+  margin: 0;
+  padding: 0;
   border: none;
-  padding-top: 11px;
 }
 
-.filter-infrastructure,
-.filter-type,
-.catalog-price {
-  padding-left: 30px;
-  list-style: none;
+.filter-form:first-child {
+  width: 257px;
 }
 
-.filter-form-infastructure {
-  margin-top: 3px;
-  margin-left: -10px;
+.filter-form:nth-child(2) {
+  width: 288px;
+  margin-right: 200px;
 }
 
-.filter-infrastructure input[type="checkbox"] {
-  display: none;
-}
 
-.filter-infrastructure label {
-  position: relative;
-  cursor: pointer;
-}
-
-.filter-infrastructure label:before {
-  content: "";
-  position: absolute;
-  width: 23px;
-  height: 23px;
-  margin-left: -30px;
-  background-image: url("../img/checkbox-off.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.filter-infrastructure input[type="checkbox"]:checked ~ label:before {
-  content: "";
-  width: 27px;
-  height: 23px;
-  background-image: url("../img/checkbox-on.svg");
-}
-
-.filter-type input[type="checkbox"] {
-  display: none;
-}
-
-.filter-type label {
-  padding-left: 17px;
-  position: relative;
-  cursor: pointer;
-}
-
-.filter-type label:before {
-  content: "";
-  position: absolute;
-  width: 23px;
-  height: 23px;
-  margin-left: -30px;
-  background-image: url("../img/checkbox-off.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.filter-type input[type="checkbox"]:checked ~ label:before {
-  content: "";
-  width: 27px;
-  height: 23px;
-  background-image: url("../img/checkbox-on.svg");
-}
-
-.filter-form-type {
-  margin-left: 79px;
-  margin-top: 3px;
-}
-
-.filter-form-type legend{
-  margin-left: 15px;
-}
 
 .sort {
   padding-top: 7px;
-}
-
-.filter-with-checkbox li {
-  padding-bottom: 23px;
-}
+} */
 
 .result {
   padding-left: 6%;

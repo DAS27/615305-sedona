@@ -25,12 +25,11 @@
       </header>
 
       <main class="container">
-        <section class="filter-form">
+        <section class="filters">
           <form class="form-hotel-search" action="https://echo.htmlacademy.ru" method="post">
-            <div class="filter-with-checkbox">
-              <fieldset class="filter-form-infastructure">
-                <legend>Инфраструктура:</legend>
-                <ul class="filter-infrastructure">
+            <fieldset class="filter-form">
+              <legend>Инфраструктура:</legend>
+                <ul>
                   <li>
                     <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
                     <label for="filter-swimming-pool">Бассейн</label>
@@ -44,11 +43,10 @@
                     <label for="filter-wi-fi">Wi-Fi</label>
                   </li>
                 </ul>
-              </fieldset>
-              <div class="type-hotels">
-                <fieldset class="filter-form-type">
-                  <legend>Тип жилья</legend>
-                  <ul class="filter-type">
+            </fieldset>
+              <fieldset class="filter-form">
+                <legend>Тип жилья</legend>
+                  <ul>
                     <li>
                       <input type="checkbox" id="filters-hotel" name="hotel" checked>
                       <label for="filters-hotel">Гостиница</label>
@@ -62,26 +60,22 @@
                       <label for="apartments">Аппартаменты</label>
                     </li>
                   </ul>
-                </fieldset>
-              </div>
-            </div>
-            <div class="filter-with-price">
-              <div class="filter-range">
-                <div class="filter-range-title">Стоимость в сутки (р):</div>
-                <div class="price-controls">
-                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-                </div>
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
+              </fieldset>
+              <div class="filter-price-form filter-range">
+                  <div class="filter-range-title">Стоимость в сутки (Р):</div>
+                  <div class="price-controls">
+                    <label class="min-price">От<input type="text" name="min-price" value="0"></label>
+                    <label class="max-price">До<input type="text" name="max-price" value="3000"></label>
                   </div>
-                  <div class="range-toggle range-toggle-min"></div>
-                  <div class="range-toggle range-toggle-max"></div>
-                </div>
-                <button class="btn-transparent" type="submit">Показать</button>
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                      <div class="range-toggle range-toggle-min"></div>
+                      <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                  </div>
+                  <button class="show-button" type="submit">Показать</button>
               </div>
-            </div>
           </form>
         </section>
 
