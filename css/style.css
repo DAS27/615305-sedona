@@ -760,9 +760,9 @@ input[type="radio"].visually-hidden {
   color: #cacaca;
 }
 
-.hotel-price span {
+/*.hotel-price span {
   padding-right: 33px;
-}
+}*/
 
 .details-btn {
   width: 110px;
@@ -821,15 +821,18 @@ input[type="radio"].visually-hidden {
 }
 
 .rating-stars {
-  margin-bottom: 45px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: -19px;
+  padding-bottom: 34px;
 }
 
-.stars span{
-  width: 18px;
+.stars {
+  width: 23px;
   height: 17px;
   background-image: url("../img/star.svg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: space;
 }
 
 .inner-footer-container {
