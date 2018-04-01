@@ -156,6 +156,11 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/mask.png");
 }
 
+.intro {
+  padding-left: 304px;
+  padding-right: 304px;
+}
+
 .intro-title {
   padding-left: 1px;
   font-size: 21px;
@@ -179,7 +184,7 @@ input[type="radio"].visually-hidden {
 .feature span {
   display: block;
   text-align: center;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
 }
 
 .feature-description {
@@ -191,9 +196,23 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
+.feature-description:last-child {
+  width: 400px;
+  padding-top: 26px;
+  padding-right: 45px;
+  padding-bottom: 0; 
+  padding-left: 45px;
+}
+
+.feature-title {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
 .feature img {
   display: block;
 }
+
 
 .promote-items-list {
   margin: 0;
@@ -249,6 +268,11 @@ input[type="radio"].visually-hidden {
   padding-right: 63px;
   padding-bottom: 43px;
   padding-left: 62px;
+}
+
+.feature-item-title {
+  padding-left: 54px;
+  padding-right: 54px;
 }
 
 .appointment {
@@ -541,16 +565,16 @@ input[type="radio"].visually-hidden {
   width: 115px;
 }
 
-.button-academy svg {
+.button-academy path {
   width: 115px;
   height: 41px;
 }
 
-.button-academy:hover svg path {
+.button-academy:hover path {
   fill: #81b3d2;
 }
 
-.button-academy:active svg path {
+.button-academy:active path {
   fill: #bdbbbc;
 }
 
@@ -773,6 +797,7 @@ input[type="radio"].visually-hidden {
 .hotel-description {
   display: inline-block;
   width: 112px;
+  vertical-align: top;
 }
 
 .details-btn {
