@@ -260,7 +260,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-top: 55px;
-  padding-right: 11px;
 }
 
 .appointment-info {
@@ -369,7 +368,12 @@ input[type="radio"].visually-hidden {
 }
 
 .form-control-peoples label {
-  margin-right: 41px;
+  margin-right: 44px;
+  line-height: 38px;
+}
+
+.form-control-peoples label:last-child {
+  margin-right: 25px;
   line-height: 38px;
 }
 
@@ -515,8 +519,8 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-copyright p {
-  padding-right: 1px;
-  padding-top: 2px;
+  padding-right: 2px;
+  padding-top: 1px;
 }
 
 .button-tw {
@@ -532,8 +536,8 @@ input[type="radio"].visually-hidden {
 }
 
 .button-academy {
-  padding-left: 4px;
-  padding-top: 10px;
+  padding-left: 3px;
+  padding-top: 8px;
   width: 115px;
 }
 
@@ -581,7 +585,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 23px;
   height: 23px;
-  margin-left: -30px;
+  left: -1px;
+  top: 0;
   background-image: url("../img/checkbox-off.svg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -619,6 +624,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   padding-left: 39px;
   margin-bottom: 25px;
+  position: relative;
 }
 
 .checkbox-item input {
@@ -760,9 +766,14 @@ input[type="radio"].visually-hidden {
   color: #cacaca;
 }
 
-/*.hotel-price span {
-  padding-right: 33px;
-}*/
+.hotel-price {
+  margin-bottom: 12px;
+}
+
+.hotel-description {
+  display: inline-block;
+  width: 112px;
+}
 
 .details-btn {
   width: 110px;
@@ -775,7 +786,6 @@ input[type="radio"].visually-hidden {
   border: none;
   text-transform: uppercase;
   margin-right: 3px;
-  margin-top: 12px;
 }
 
 .details-btn:hover {
@@ -867,8 +877,8 @@ input[type="radio"].visually-hidden {
 .price-controls {
   position: relative;
 
-  height: 36px;
-  margin-bottom: 16px;
+  height: 32px;
+  margin-bottom: 20px;
 
   font-size: 0;
 
@@ -893,7 +903,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
+  line-height: 32px;
   vertical-align: top;
 
   cursor: pointer;
@@ -975,6 +985,8 @@ input[type="radio"].visually-hidden {
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+  position: relative;
+  left: -6px;
 }
 
 .btn-transparent:hover {
