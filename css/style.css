@@ -189,7 +189,7 @@ input[type="radio"].visually-hidden {
 
 .feature-description {
   width: 400px;
-  padding-top: 26px;
+  padding-top: 30px;
   padding-right: 60px;
   padding-bottom: 0;
   padding-left: 60px;
@@ -198,15 +198,21 @@ input[type="radio"].visually-hidden {
 
 .feature-description:last-child {
   width: 400px;
-  padding-top: 26px;
+  padding-top: 27px;
   padding-right: 45px;
   padding-bottom: 0; 
   padding-left: 45px;
 }
 
 .feature-title {
-  padding-left: 72px;
-  padding-right: 72px;
+  padding-left: 73px;
+  padding-right: 73px;
+  line-height: 22px;
+  margin-bottom: 22px;
+}
+
+.advantages-description {
+  line-height: 22px;
 }
 
 .feature img {
@@ -230,6 +236,10 @@ input[type="radio"].visually-hidden {
   padding-left: 50px;
 }
 
+.promote-item-title {
+  padding-top: 2px;
+}
+
 .promote-item-house {
   background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
@@ -241,7 +251,8 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-position-y: 60px;
+  background-position-y: 61px;
+  background-position-x: 160px;
 }
 
 .promote-item-souvenirs {
@@ -264,15 +275,21 @@ input[type="radio"].visually-hidden {
 
 .feature-list-item {
   width: 33.33%;
-  padding-top: 25px;
+  padding-top: 29px;
   padding-right: 63px;
   padding-bottom: 43px;
   padding-left: 62px;
+  line-height: 1;
+}
+
+.feature-list-item p {
+  line-height: 2;
 }
 
 .feature-item-title {
-  padding-left: 54px;
-  padding-right: 54px;
+  padding-left: 60px;
+  padding-right: 59px;
+  padding-bottom: 11px;
 }
 
 .appointment {
@@ -331,7 +348,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   font-weight: bold;
   color: #000000;
-  padding-left: 12px;
+  padding-left: 15px;
 }
 
 .date-choice  {
@@ -349,7 +366,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-hotel label {
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .appointment input:hover {
@@ -365,7 +382,7 @@ input[type="radio"].visually-hidden {
   border: none;
   outline: transparent;
   position: absolute;
-  right: 9px;
+  right: 4px;
   top: 5px;
 }
 
