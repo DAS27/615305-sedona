@@ -682,10 +682,6 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.sort {
-  padding-top: 7px;
-}
-
 .result {
   padding-left: 6%;
   padding-right: 6%;
@@ -713,6 +709,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sort {
+  padding-top: 7px;
   display: flex;
 }
 
@@ -731,7 +728,7 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   line-height: 18px;
   color: #dadada;
-  border-bottom: 1px dashed rgb(129, 179, 210);
+  border-bottom: 1px dotted #81b3d2;  
 }
 
 .sort a:hover {
@@ -741,6 +738,10 @@ input[type="radio"].visually-hidden {
 .sort a:active {
   color: #000000;
   border-bottom: none;
+}
+
+.sort-down-current {
+  color: #81b3d2;
 }
 
 .sort-result a {
@@ -765,9 +766,6 @@ input[type="radio"].visually-hidden {
   border-bottom: none;
 }
 
-.sort-result path {
-  fill: #cacaca;
-}
 
 .sort-result path:hover {
   fill: #000000;
