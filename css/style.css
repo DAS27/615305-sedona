@@ -58,6 +58,7 @@ input[type="radio"].visually-hidden {
 .main-header {
   position: relative;
   min-height: 564px;
+  background-color: #2a5a78;
   background-image: url("../img/bg-index.jpg");
   background-repeat: no-repeat;
   background-position: center -27px;
@@ -219,7 +220,6 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-
 .promote-items-list {
   margin: 0;
   padding: 0;
@@ -232,8 +232,13 @@ input[type="radio"].visually-hidden {
   width: 33.33%;
   padding-top: 140px;
   padding-right: 50px;
-  padding-bottom: 62px;
+  padding-bottom: 69px;
   padding-left: 50px;
+}
+
+.promote-item p {
+  line-height: 20px;
+  margin-top: 22px;
 }
 
 .promote-item-title {
@@ -277,13 +282,14 @@ input[type="radio"].visually-hidden {
   width: 33.33%;
   padding-top: 29px;
   padding-right: 63px;
-  padding-bottom: 39px;
+  padding-bottom: 45px;
   padding-left: 62px;
   line-height: 1;
 }
 
 .feature-list-item p {
-  line-height: 2;
+  line-height: 20px;
+  margin-top: 25px;
 }
 
 .feature-item-title {
@@ -351,7 +357,7 @@ input[type="radio"].visually-hidden {
   padding-left: 15px;
 }
 
-.date-choice  {
+.date-choice {
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
@@ -468,7 +474,7 @@ input[type="radio"].visually-hidden {
   color: rgb(0, 0, 0);
 }
 
-.found  {
+.found {
   width: 458px;
   height: 58px;
   font-size: 21px;
@@ -477,6 +483,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
+  text-transform: uppercase;
 }
 
 .found:hover {
@@ -496,7 +503,7 @@ input[type="radio"].visually-hidden {
 .footer-container {
   display: flex;
   padding-bottom: 33px;
-  padding-top: 23px;
+  padding-top: 21px;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -523,6 +530,8 @@ input[type="radio"].visually-hidden {
 .social-list {
   display: flex;
   flex-direction: row;
+  padding-left: 44px;
+  margin-bottom: 12px;
 }
 
 .social-list li {
@@ -601,6 +610,7 @@ input[type="radio"].visually-hidden {
   padding-right: 6%;
   padding-top: 28px;
   padding-bottom: 7px;
+  background-color: #3079b7;
   background-image: url("../img/filterbackground.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -755,16 +765,16 @@ input[type="radio"].visually-hidden {
   border-bottom: none;
 }
 
-.sort-result svg path {
+.sort-result path {
   fill: #cacaca;
 }
 
-.sort-result svg path:hover {
+.sort-result path:hover {
   fill: #000000;
 }
 
-.sort-result svg path:focus,
-.sort-result svg path:active {
+.sort-result path:focus,
+.sort-result path:active {
   fill: #81b3d2;
 }
 
