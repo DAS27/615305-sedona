@@ -631,7 +631,7 @@ input[type="radio"].visually-hidden {
   margin-right: 120px;
 }
 
-.checkboxes-section[type:="checkbox"] label:before {
+.checkboxes-section input[type="checkbox"] ~ label:before {
   content: "";
   position: absolute;
   width: 23px;
@@ -644,6 +644,10 @@ input[type="radio"].visually-hidden {
   background-position: center;
 }
 
+.checkboxes-section input[type="checkbox"]:disabled ~ label:before {
+  background-image: url("../img/checkbox-off-disabled.svg");
+}
+
 .checkboxes-section input[type="checkbox"]:checked ~ label:before {
   content: "";
   width: 27px;
@@ -651,18 +655,8 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.checkboxes-section input[type="checkbox"]:disabled label:before {
-  content: "";
-  widows: 23px;
-  height: 23px;
-  background-image: url(../img/checkbox-disabled.svg);
-}
-
-.checkbox-section input[type="checkbox"]:disabled + label:before {
-  content: "";
-  width: 27px;
-  height: 23px;
-  background-image: url("../img/checkbox-checked-disabled.svg");
+.checkboxes-section input[type="checkbox"]:checked:disabled ~ label:before {
+  background-image: url("../img/checkbox-on-disabled.svg");
 }
 
 .checkboxes-section-titie {
