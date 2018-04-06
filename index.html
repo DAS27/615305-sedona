@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min.style.css">
     <title>Главная страница Sedona</title>
   </head>
   <body>
@@ -96,8 +96,10 @@
           <h2 class="visually-hidden">Форма поиска гостиницы</h2>
           <h2>Заинтересовались?</h2>
             <p class="appointment-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне </p>
-              <button class="search" type="button">Поиск гостиницы в седоне</button>
-              <form class="search-hotel" action="https://echo.htmlacademy.ru" method="post">
+              <button class="modal-button" type="button">Поиск гостиницы в седоне</button>
+              <div class="popup">
+              <div class="modal-show modal-close modal-search">
+                <form class="search-hotel" action="https://echo.htmlacademy.ru" method="post">
                 <div class="date-choice">
                   <label for="date-in">Дата заезда:</label>
                     <input type="text" id="date-in" name="date-in" placeholder="24 АПРЕЛЯ 2017">
@@ -132,15 +134,17 @@
                   </div>
                   <button class="found" type="submit">Найти</button>
               </form>
+              </div>
+            </div>
         </section>
+        <div class="main-map">
+        <h2 class="visually-hidden">Карта седоны</h2>
+          <img src="img/map.jpg" width="1200" height="595" alt="Карта седоны">
+          <iframe src="https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d839471.5226392496%212d-112.0585197%213d34.7257149%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x872da132f942b00d%3A0x5548c523fa6c8efd%212z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ%215e0%213m2%211sru%212sru%214v1477220779942" width="1200" height="473" allowfullscreen=""></iframe>
+        </div>
       </main>
 
       <footer class="main-footer">
-        <h2 class="visually-hidden">Карта седоны</h2>
-        <section class="main-map">
-          <img src="img/map.jpg" width="1200" height="595" alt="Карта седоны">
-        </section>
-
         <div class="footer-container">
         <h2 class="visually-hidden">Хэштег Посити Седону</h2>
           <section class="hashtag">#VISITSEDONA</section>
@@ -164,5 +168,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
