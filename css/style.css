@@ -859,9 +859,6 @@ iframe {
   border-bottom: none;
 }
 
-.sort-down-current {
-  color: #81b3d2;
-}
 
 .sort-result a {
   padding-right: 6px;
@@ -885,12 +882,12 @@ iframe {
   border-bottom: none;
 }
 
-.sort-result path:hover {
+.sort-up path:hover {
   fill: #000000;
 }
 
-.sort-result path:focus,
-.sort-result path:active {
+.sort-up path:focus,
+.sort-up path:active {
   fill: #81b3d2;
 }
 
